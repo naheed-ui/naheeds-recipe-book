@@ -53,13 +53,20 @@ function setFilter(filter) {
 
   applyFilters();
 
-  document.getElementById("recipes")?.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
+  function setFilter(filter) {
+  currentFilter = (filter || "all").toLowerCase();
 
-document.querySelectorAll("[data-filter]").forEach(button => {
+  document.querySelectorAll(".category-pills button").forEach(button => {
+    button.classList.toggle(
+      "active",
+      button.dataset.filter === currentFilter
+    );
+  });
+
+  applyFilters();
+}
+}
+document.querySelectorAll("button[data-filter], .category-dropdown a[data-filter]").forEach(button => {
   button.addEventListener("click", event => {
     event.preventDefault();
     setFilter(button.dataset.filter);
