@@ -238,3 +238,107 @@
     font-size: 20px;
   }
 }
+/* =================================
+   LANGUAGE SWITCHER
+   ================================= */
+
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 5px auto 38px;
+}
+
+.language-btn {
+  appearance: none;
+  border: 1.5px solid #dfc5bd;
+  background: #fffaf5;
+  color: #70534d;
+
+  padding: 13px 26px;
+  min-width: 145px;
+
+  border-radius: 999px;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(92, 67, 60, 0.08);
+
+  transition: all 0.2s ease;
+}
+
+.language-btn:hover {
+  transform: translateY(-2px);
+  background: #f8e9e4;
+  box-shadow: 0 7px 16px rgba(92, 67, 60, 0.13);
+}
+
+.language-btn.active {
+  background: #e8cfc8;
+  border-color: #d8b7ae;
+  color: #4f3935;
+  box-shadow: 0 6px 16px rgba(92, 67, 60, 0.15);
+}
+
+
+/* =================================
+   HINDI / DEVANAGARI
+   ================================= */
+
+.recipe-hindi {
+  font-family: "Noto Sans Devanagari", sans-serif;
+}
+
+.recipe-hindi .eyebrow,
+.recipe-hindi h1,
+.recipe-hindi h2,
+.recipe-hindi p,
+.recipe-hindi li,
+.recipe-hindi strong {
+  font-family: "Noto Sans Devanagari", sans-serif;
+}
+
+.recipe-hindi .eyebrow {
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+}
+
+.recipe-hindi h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.recipe-hindi h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.recipe-hindi p,
+.recipe-hindi li {
+  font-size: 20px;
+  line-height: 1.95;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .language-switcher {
+    gap: 8px;
+  }
+
+  .language-btn {
+    min-width: 0;
+    flex: 1;
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+
+}
