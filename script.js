@@ -71,3 +71,32 @@ if (search) {
 }
 
 applyFilters();
+/* ================================
+   ENGLISH / HINDI RECIPE SWITCH
+   ================================ */
+
+const languageButtons = document.querySelectorAll(".language-btn");
+const englishRecipe = document.querySelector(".recipe-english");
+const hindiRecipe = document.querySelector(".recipe-hindi");
+
+languageButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    const selectedLanguage = button.dataset.language;
+
+    languageButtons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    if (selectedLanguage === "hindi") {
+      englishRecipe.hidden = true;
+      hindiRecipe.hidden = false;
+    } else {
+      englishRecipe.hidden = false;
+      hindiRecipe.hidden = true;
+    }
+
+  });
+});
