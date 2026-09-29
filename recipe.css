@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* ================================
+   NAHEED'S RECIPE JOURNAL
+   ================================ */
+
+.recipe-page {
+  width: min(820px, calc(100% - 40px));
+  margin: 55px auto 80px;
+  padding: 55px 65px 75px;
+
+  background: #fffaf5;
+  border-radius: 28px;
+
+  box-shadow:
+    0 12px 35px rgba(92, 67, 60, 0.10);
+
+  color: #594743;
+
+  font-family: "Caveat", cursive;
+}
+
+
+/* BACK TO RECIPES */
+
+.recipe-page > a:first-child {
+  display: inline-block;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #80635d;
+  background: #f3dfd8;
+
+  padding: 9px 17px;
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  margin-bottom: 30px;
+}
+
+
+/* RECIPE LABEL */
+
+.recipe-page .eyebrow {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #a47770;
+
+  margin-bottom: 14px;
+}
+
+
+/* MAIN TITLE */
+
+.recipe-page h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 46px;
+  line-height: 1.2;
+
+  color: #493936;
+
+  text-align: center;
+
+  margin: 0 0 15px;
+}
+
+
+/* DESCRIPTION */
+
+.recipe-page > p {
+  font-family: "Caveat", cursive;
+
+  font-size: 25px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: #79625c;
+
+  max-width: 650px;
+
+  margin: 0 auto 32px;
+}
+
+
+/* DIVIDER */
+
+.recipe-page hr {
+  border: none;
+
+  border-top: 1px solid #dfcbc4;
+
+  margin: 35px 0 40px;
+}
+
+
+/* SECTION HEADINGS */
+
+.recipe-page h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 30px;
+  line-height: 1.3;
+
+  color: #59423e;
+
+  margin: 40px 0 18px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #eadbd5;
+}
+
+
+/* ALL NORMAL TEXT */
+
+.recipe-page p {
+  font-family: "Caveat", cursive;
+
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  color: #66534e;
+}
+
+
+/* INGREDIENTS */
+
+.recipe-page ul {
+  padding-left: 32px;
+
+  margin: 10px 0 30px;
+}
+
+.recipe-page ul li {
+  font-family: "Caveat", cursive;
+
+  font-size: 22px;
+
+  line-height: 1.65;
+
+  color: #5f4d48;
+
+  margin: 3px 0;
+}
+
+
+/* METHOD */
+
+.recipe-page ol {
+  padding-left: 36px;
+
+  margin: 10px 0 35px;
+}
+
+.recipe-page ol li {
+  font-family: "Caveat", cursive;
+
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  color: #5f4d48;
+
+  margin-bottom: 8px;
+}
+
+
+/* BOLD WORDS */
+
+.recipe-page strong {
+  color: #493936;
+  font-weight: 700;
+}
+
+
+/* BEGINNER NOTES */
+
+.recipe-page h2:last-of-type {
+  background: #f3dfd8;
+
+  border: none;
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 22px 25px 10px;
+
+  margin-top: 50px;
+}
+
+.recipe-page h2:last-of-type + p {
+  background: #f3dfd8;
+
+  border-radius: 0 0 20px 20px;
+
+  padding: 0 25px 25px;
+
+  margin-top: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .recipe-page {
+    width: calc(100% - 24px);
+
+    margin: 25px auto 50px;
+
+    padding: 35px 25px 55px;
+  }
+
+  .recipe-page h1 {
+    font-size: 36px;
+  }
+
+  .recipe-page h2 {
+    font-size: 26px;
+  }
+
+  .recipe-page > p {
+    font-size: 22px;
+  }
+
+  .recipe-page ul li,
+  .recipe-page ol li {
+    font-size: 20px;
+  }
+}
