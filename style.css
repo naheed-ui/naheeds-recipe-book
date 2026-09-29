@@ -635,3 +635,65 @@ body:has(> main > a[href="../index.html"]) > main h2:last-of-type + p {
     margin-bottom: 15px !important;
   }
 }
+/* =========================================
+   MOBILE RECIPE SEARCH + CATEGORY LAYOUT
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  /* Stack everything vertically */
+  .section-heading {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+
+  /* Recipe heading */
+  .section-heading > div:first-child {
+    width: 100% !important;
+    margin-bottom: 22px !important;
+  }
+
+  /* Search box */
+  .search-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 0 24px 0 !important;
+    position: relative !important;
+    order: 2 !important;
+  }
+
+  .search-wrap input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-height: 54px !important;
+  }
+
+  /* Category buttons */
+  .category-pills {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    order: 3 !important;
+  }
+
+  .category-pills button {
+    position: relative !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    min-height: 48px !important;
+    padding: 10px 18px !important;
+    border-radius: 30px !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+  }
+}
