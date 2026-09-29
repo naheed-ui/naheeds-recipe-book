@@ -195,3 +195,122 @@
   }
 
 }
+/* =========================================================
+   RECIPE PAGE — centered, larger & handwritten
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body:has(> main > a[href="../index.html"]) > main {
+  width: min(820px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 58px 55px 85px;
+  background: rgba(255,253,249,.75);
+}
+
+/* Back link */
+body:has(> main > a[href="../index.html"]) > main > a:first-child {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #92716b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #f4e3dd;
+}
+
+/* Small recipe label */
+body:has(> main > a[href="../index.html"]) > main > .eyebrow {
+  font-size: 12px;
+  letter-spacing: .18em;
+  margin: 10px 0 18px;
+}
+
+/* Recipe title */
+body:has(> main > a[href="../index.html"]) > main > h1 {
+  font: 600 43px/1.2 'Playfair Display', serif;
+  margin: 0 0 14px;
+  color: #493936;
+}
+
+/* Intro description */
+body:has(> main > a[href="../index.html"]) > main > p {
+  font: 400 20px/1.8 'Kalam', cursive;
+  color: #685652;
+  margin: 8px 0 25px;
+}
+
+/* Divider */
+body:has(> main > a[href="../index.html"]) > main hr {
+  border: 0;
+  border-top: 1px solid #dfcbc4;
+  margin: 30px 0 34px;
+}
+
+/* Section headings */
+body:has(> main > a[href="../index.html"]) > main h2 {
+  font: 600 29px/1.3 'Playfair Display', serif;
+  color: #58423e;
+  margin: 32px 0 12px;
+}
+
+/* Ingredients + method */
+body:has(> main > a[href="../index.html"]) > main ul,
+body:has(> main > a[href="../index.html"]) > main ol {
+  margin: 14px 0 28px;
+  padding-left: 32px;
+  font: 400 20px/1.85 'Kalam', cursive;
+  color: #62504b;
+}
+
+/* Individual ingredients / steps */
+body:has(> main > a[href="../index.html"]) > main li {
+  padding-left: 6px;
+  margin: 4px 0;
+}
+
+/* Bold words */
+body:has(> main > a[href="../index.html"]) > main strong {
+  font-weight: 700;
+  color: #4f3a36;
+}
+
+/* Beginner note */
+body:has(> main > a[href="../index.html"]) > main h2:last-of-type {
+  margin-top: 42px;
+  padding: 18px 22px 8px;
+  background: #f5e1db;
+  border-radius: 18px 18px 0 0;
+}
+
+body:has(> main > a[href="../index.html"]) > main h2:last-of-type + p {
+  margin-top: 0;
+  padding: 0 22px 22px;
+  background: #f5e1db;
+  border-radius: 0 0 18px 18px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  body:has(> main > a[href="../index.html"]) > main {
+    width: calc(100% - 24px);
+    padding: 35px 22px 60px;
+  }
+
+  body:has(> main > a[href="../index.html"]) > main > h1 {
+    font-size: 34px;
+  }
+
+  body:has(> main > a[href="../index.html"]) > main > p,
+  body:has(> main > a[href="../index.html"]) > main ul,
+  body:has(> main > a[href="../index.html"]) > main ol {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  body:has(> main > a[href="../index.html"]) > main h2 {
+    font-size: 25px;
+  }
+}
