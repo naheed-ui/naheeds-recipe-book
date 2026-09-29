@@ -574,3 +574,12 @@ body:has(> main > a[href="../index.html"]) > main h2:last-of-type + p {
     font-size: 19px !important;
   }
 }
+@media (max-width: 600px) {
+  .category-filters {
+    margin-top: 18px;
+  }
+
+  .search-box {
+    margin-bottom: 18px;
+  }
+}
