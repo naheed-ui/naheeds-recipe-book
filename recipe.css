@@ -342,3 +342,12 @@
   }
 
 }
+@media (max-width: 600px) {
+  .category-filters {
+    margin-top: 18px;
+  }
+
+  .search-box {
+    margin-bottom: 18px;
+  }
+}
